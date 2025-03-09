@@ -87,14 +87,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     scrollLeftBtn.addEventListener('click', function() {
         photosContainer.scrollBy({
-            left: -320,
+            left: -330,
             behavior: 'smooth'
         });
     });
 
     scrollRightBtn.addEventListener('click', function() {
         photosContainer.scrollBy({
-            left: 320,
+            left: 330,
             behavior: 'smooth'
         });
     });
