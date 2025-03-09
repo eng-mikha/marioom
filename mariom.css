@@ -106,7 +106,15 @@ nav {
             > ul {
                 list-style: none;
                 display: flex;
+                
                 > li {
+                    > a {
+                        color: var(--black);
+                        transition: color 0.3s;
+                    }
+                    > a:hover {
+                        color: var(--gray);
+                    }
                     padding: 20px;
                     transition: color 0.3s;
                     cursor: pointer;
@@ -596,3 +604,141 @@ nav {
     }
 }
 /* end about section */
+/* start talk section */
+.talk {
+    margin: 100px 0;
+    .container {
+        position: relative;
+        display: flex;
+        height: 500px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        .f-p,
+        .f-h {
+            display: none;
+        }
+        .image {
+            height: 100%;
+            img {
+                height: 100%;
+                border-radius: var(--raduis);
+            }
+        }
+        .top {
+            p {
+                color: var(--second-c);
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            h1 {
+                color: var(--main-c);
+                margin-bottom: 20px;
+                span {
+                    color: var(--second-c);
+                }
+            }
+        }
+        .bottom {
+            .phrase {
+                margin-left: 30px;
+                margin-bottom: 30px;
+                position: relative;
+                i {
+                    position: absolute;
+                    left: -25px;
+                    top: 7px;
+                    color: var(--second-c);
+                }
+                h2 {
+                    font-size: 20px;
+                    color: var(--main-c);
+                }
+                p {
+                    color: var(--gray);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .talk {
+        .container {
+            gap: 10px;
+            height: 350px;
+            .top {
+                p {
+                    font-size: 15px;
+                }
+                h1 {
+                    font-size: 20px;
+                }
+            }
+            .bottom {
+                margin-bottom: 15px;
+                .phrase {
+                    
+                    h2 {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+} 
+@media (max-width: 768px) {
+    .talk {
+        margin-top: 0;
+        .container {
+            flex-direction: column;
+            text-align: center;
+            .f-p {
+                display: block;
+                color: var(--second-c);
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            .f-h {
+                display: block;
+                color: var(--main-c);
+                margin-bottom: 10px;
+            }
+            .image {
+                width: 100%;
+                
+                img {
+                    height: 100%;
+                    position: relative;
+                }
+            }
+            .p {
+                margin: 15px;
+            }
+            .top {
+                p,
+                h1 {
+                    display: none;
+                }
+                
+            }
+            .bottom {
+                .phrase {
+                    h2 {
+                        font-size: 22px;
+                        margin-bottom: 10px;
+                        text-align: start;
+                    }
+                    p {
+                        font-size: 18px;
+                        text-align: start;
+                    }
+                    i {
+                        /* left: 50%; */
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+/* end talk section */
