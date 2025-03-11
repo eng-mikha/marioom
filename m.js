@@ -11,13 +11,13 @@ document.addEventListener('scroll', function() {
     });
 });
 
-window.onload = function() {
-    const elements = document.querySelectorAll('.hidden-top');
+// window.onload = function() {
+//     const elements = document.querySelectorAll('.hidden-top');
     
-    elements.forEach(element => {
-        element.classList.add('visible-top');
-    });
-};
+//     elements.forEach(element => {
+//         element.classList.add('visible-top');
+//     });
+// };
 
 
 
