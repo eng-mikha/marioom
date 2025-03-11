@@ -1,30 +1,23 @@
-// let menu = document.getElementById("menu");
-// let list = document.getElementById("list");
-// let menuTwo = document.getElementById("menu-two");
-// let listTwo = document.getElementById("list-two");
-// let services = document.getElementById("services");
-
-
-// document.addEventListener('scroll', function() {
-//     const elements = document.querySelectorAll('.hidden');
+document.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.hidden');
     
-//     elements.forEach(element => {
-//         const elementPosition = element.getBoundingClientRect().top;
-//         const screenPosition = window.innerHeight / 1.3; // يمكنك تعديل هذا الرقم لتغيير وقت الظهور
+    elements.forEach(element => {
+        const elementPosition = element.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.3; // يمكنك تعديل هذا الرقم لتغيير وقت الظهور
 
-//         if (elementPosition <= screenPosition) {
-//             element.classList.add('visible');
-//         }
-//     });
-// });
+        if (elementPosition <= screenPosition) {
+            element.classList.add('visible');
+        }
+    });
+});
 
-// window.onload = function() {
-//     const elements = document.querySelectorAll('.hidden-top');
+window.onload = function() {
+    const elements = document.querySelectorAll('.hidden-top');
     
-//     elements.forEach(element => {
-//         element.classList.add('visible-top');
-//     });
-// };
+    elements.forEach(element => {
+        element.classList.add('visible-top');
+    });
+};
 
 
 
@@ -128,3 +121,5 @@ document.addEventListener('DOMContentLoaded', function() {
         photosContainer.scrollLeft = scrollLeft - walk;
     });
 });
+
+
